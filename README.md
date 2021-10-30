@@ -27,3 +27,11 @@ appearance: string; // currently available: 'positive' & 'negative'
 href: string; // optional, turns button into a link that appears like a button
 target: string; // only really useful if `href` is passed as a property
 ```
+
+`<jack-card>`  
+**jack-card Props**  
+```js
+title: string; // this will populate the card header value
+content: string; // this will populate the card content value
+// There is a <slot /> to allow child properties to pass through beneath content
+```

@@ -7,15 +7,18 @@
   <title>Jack UI</title>
 
   <script defer src='/build/jackui.js'></script>
+  <style>
+    body {
+      background: #ccc
+    }
+  </style>
 </head>
 
 <body>
-
-  <jack-button name="Repo" appearance="positive" href="//github.com/jackkeller/spike-microfrontend" target="blank">
-  </jack-button>
-  <jack-button name="Cat Ipsum" appearance="negative" href="//www.catipsum.com/" target="new"></jack-button>
-  <jack-button name="I don't do anything"></jack-button>
-
+  <jack-card title="My Card" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum accusantium.">
+    <jack-button name="See Code" appearance="positive" href="//github.com/jackkeller/spike-microfrontend"
+      target="blank">
+  </jack-card>
 </body>
 
 </html>
