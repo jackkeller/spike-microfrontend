@@ -9,13 +9,13 @@ This is a Svelte project that compiles to a single JS file that can be published
 `npm run build`
 
 Rollup will bundle everything into `./public/build/jackui.js`
-That file should then be deployed at a publicly accessbile url for demo purposes a version can be linked to from here [https://cdn.jsdelivr.net/gh/jackkeller/spike-microfrontend@main/public/build/jackui.js](https://cdn.jsdelivr.net/gh/jackkeller/spike-microfrontend@main/public/build/jackui.js).
+That file should then be deployed at a publicly accessbile url for demo purposes a version can be linked to from here [https://cdn.jsdelivr.net/gh/jackkeller/spike-microfrontend/public/build/jackui.js](https://cdn.jsdelivr.net/gh/jackkeller/spike-microfrontend/public/build/jackui.js).
 
 ## Using the FE
 To use the Microfrontend on any other site:
 
 Find the public url of the js file and include it on the page like so:  
-`<script type="module" src="https://cdn.jsdelivr.net/gh/jackkeller/spike-microfrontend@main/public/build/jackui.js"></script>`
+`<script type="module" src="https://cdn.jsdelivr.net/gh/jackkeller/spike-microfrontend/public/build/jackui.js"></script>`
 
 ## Components
 
