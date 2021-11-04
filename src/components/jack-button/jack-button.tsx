@@ -9,7 +9,7 @@ export class JackButton {
   /**
    * Button Style
    */
-   @Prop() appearance: string;
+  @Prop() appearance: string;
   /**
    * Is it a link?
    */
@@ -24,14 +24,13 @@ export class JackButton {
       <Host>
         {this.link ? (
           <a href={this.link} class={this.appearance ?? 'default'} target={this.outside ? '_outside' : ''}>
-          <slot></slot>
-        </a>
-
+            <slot></slot>
+          </a>
         ) : (
-        <button class={this.appearance ?? 'default'}>
-          <slot></slot>
-        </button>
-            )}
+          <button class={this.appearance ?? 'default'}>
+            <slot></slot>
+          </button>
+        )}
       </Host>
     );
   }
