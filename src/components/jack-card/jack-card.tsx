@@ -13,7 +13,7 @@ export class JackCard {
   /**
    * Card content
    */
-     @Prop() content: string;
+  @Prop() content: string;
 
   render() {
     return (
