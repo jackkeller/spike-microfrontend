@@ -1,0 +1,36 @@
+:host {
+  font-family: sans-serif;
+
+  a,
+  button {
+    box-sizing: content-box;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  button {
+    appearance: none;
+    border: 0;
+  }
+
+  .default {
+    background-color: lightgrey;
+    color: black;
+    font-weight: 600;
+  }
+
+  .primary {
+    background-color: green;
+    color: white;
+  }
+
+  .secondary {
+    background-color: lightcoral;
+    color: white;
+  }
+}

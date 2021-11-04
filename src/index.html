@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>StencilJS</title>
+
+  <script type="module" src="/build/jack-ui.esm.js"></script>
+  <script nomodule src="/build/jack-ui.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .box {
+      border: 1px solid lightgrey;
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+
+    .box h3 {
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-gap: 1rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="buttons box">
+    <h3>jack-button component</h3>
+    <jack-button link="//example.com" appearance="primary">Anchor: Appearance Primary</jack-button>
+    <jack-button link="//example.com" appearance="secondary">Button: Appearance Secondary</jack-button>
+  </div>
+
+  <div class="cards box">
+    <h3>jack-card component</h3>
+    <div class="grid">
+      <jack-card heading="Card 1" content="I am just a card, I happen to be the first card in the data set.">
+        <jack-button appearance="primary" link="//example.com">Blank Link</jack-button>
+      </jack-card>
+      <jack-card heading="Card 2"
+        content="Well, I really don\'t know why you are looking at me, I am just data over here.">
+        <jack-button appearance="secondary">Blank Button</jack-button>
+      </jack-card>
+      <jack-card heading="Card 3"
+        content="Just showing off how flexible we can be when you pass data in from maybe an API or similar!">
+      </jack-card>
+    </div>
+  </div>
+</body>
+
+</html>
